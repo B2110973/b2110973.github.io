@@ -1,0 +1,15 @@
+hr{
+    width: 50%;
+    margin-left: 0;
+}
+p{
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #6b8bd6;
+    color: #000;
+  }
+  
