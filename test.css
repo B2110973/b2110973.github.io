@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-weight: 700;
+}
+
+.container {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.target {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 114, 205);
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+button {
+    font-weight: 700;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(107, 187, 237);
+}
