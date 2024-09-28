@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resume.css">
+    <title>resume</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Ly To Nhu</h1>
+        <img src="./avt.PNG" alt="Avatar">
+    </div>
+    <h2><span class="underline">Summary</span></h2>
+<p>I've been a student at Can Tho University since 2021, majoring in Data Communication and Computer Networks. I'm in class DI21T9A2, and my advisor is Mr. Cang.</p>
+<hr>
+<h2><span class="underline">Education</span></h2>
+<p>(Still pursuing my degree)</p>
+<hr>
+<h2><span class="underline">Experience</span></h2>
+<ul>
+    <li>2024: Gained knowledge in creating basic websites</li>
+    <li>2021: Introduced to basic C programming</li>
+    <li>2022: Learned foundational Java programming</li>
+</ul>
+<hr>
+<h2><span class="underline">Hobbies</span></h2>
+<button id="toggleHobbies">Show/Hide Hobbies</button>
+<div id="hobbies">
+    <ul>
+        <li>Shopping</li>
+        <li>Chatting</li>
+        <li>Reading books</li>
+        <li>Playing volleyball</li>
+    </ul>
+</div>
+<button id="toggleFooter">Show/Hide Footer</button>
+<div class="container">
+    <div id="footerContent">
+        <p>Contact: lytonhu@gmail.com</p>
+        <p>&copy; 2024 Ly To Nhu</p>
+    </div>
+</div>
+<script>
+    const toggleButton = document.getElementById('toggleHobbies');
+    const hobbiesDiv = document.getElementById('hobbies');
+
+    toggleButton.addEventListener('click', () => {
+        if (hobbiesDiv.style.display === 'none') {
+            hobbiesDiv.style.display = 'block';
+            toggleButton.textContent = 'Hide Hobbies';
+        } else {
+            hobbiesDiv.style.display = 'none';
+            toggleButton.textContent = 'Show Hobbies';
+        }
+    });
+    const toggleFooterButton = document.getElementById('toggleFooter');
+    const footerContent = document.getElementById('footerContent');
+
+    toggleFooterButton.addEventListener('click', () => {
+        if (footerContent.style.display === 'none' || footerContent.style.display === '') {
+            footerContent.style.display = 'block';
+            toggleFooterButton.textContent = 'Hide Footer';
+        } else {
+            footerContent.style.display = 'none';
+            toggleFooterButton.textContent = 'Show Footer';
+        }
+    });
+</script>
+
+</body>
+</html>
